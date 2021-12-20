@@ -9,8 +9,8 @@ const PORT = process.env.PORT || 5000;
 
 app.post("/", (req, res) => {
   console.log(req.body);
-  if (!req.body.id || !req.body.address) {
-    res.status(400).send("Id & address required");
+  if (!req.body.amount || !req.body.address) {
+    res.status(400).send("amount & address required");
   }
   try {
     var current_date = new Date().valueOf().toString();
