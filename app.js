@@ -25,7 +25,7 @@ app.post("/", async (req, res) => {
 app.get("/", (req, res) => {
   res
     .status(200)
-    .send("Only post method allowed with (contractAddress,amount)");
+    .send("Only post method allowed with (fromAddress and amount)");
 });
 
 app.listen(PORT, () => {
